@@ -7,3 +7,4 @@ Resolution of the problems in Python language:
 | [Day 01](01) | Inverse Captcha                    | :star:                         |
 | [Day 02](02) | Corruption Checksum                | :star:                         |
 | [Day 03](03) | Spiral Memory                      | :star::star::star:             |
+| [Day 04](04) | High-Entropy Passphrases           | :star:                         |
