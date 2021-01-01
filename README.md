@@ -10,3 +10,4 @@ Resolution of the problems in Python language:
 | [Day 04](04) | High-Entropy Passphrases                | :star:                         |
 | [Day 05](05) | A Maze of Twisty Trampolines, All Alike | :star:                         |
 | [Day 06](06) | Memory Reallocation                     | :star:                         |
+| [Day 07](07) | Recursive Circus                        | :star::star:                   |
