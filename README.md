@@ -11,3 +11,4 @@ Resolution of the problems in Python language:
 | [Day 05](05) | A Maze of Twisty Trampolines, All Alike | :star:                         |
 | [Day 06](06) | Memory Reallocation                     | :star:                         |
 | [Day 07](07) | Recursive Circus                        | :star::star:                   |
+| [Day 08](08) | I Heard You Like Registers              | :star:                         |
