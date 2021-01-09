@@ -21,7 +21,7 @@ def debug_banks(banks):
 
 
 def main():
-    f = open('./input.txt')
+    f = open('input.txt')
 
     banks = []
 
