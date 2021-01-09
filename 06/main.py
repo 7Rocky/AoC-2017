@@ -1,6 +1,6 @@
 def debug_banks(banks):
     steps = 0
-    debugged = [ ]
+    debugged = []
 
     while debugged.count(banks) < 2:
         steps += 1
@@ -19,15 +19,16 @@ def debug_banks(banks):
 
     return steps, cycles
 
+
 def main():
     f = open('./input.txt')
 
-    banks = [ ]
+    banks = []
 
     for line in f:
         banks = line.strip().split('\t')
 
-    banks = [ int(b) for b in banks ]
+    banks = [int(b) for b in banks]
 
     f.close()
 
@@ -35,6 +36,7 @@ def main():
 
     print(f'Redistribution cycles (1): { count }')
     print(f'Cycles of the infinite loop (2): { cycles }')
+
 
 if __name__ == '__main__':
     main()
