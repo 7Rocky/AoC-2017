@@ -14,7 +14,7 @@ def isValid(passphrase, level):
 
 
 def main():
-    f = open('./input.txt')
+    f = open('input.txt')
 
     passphrases = []
 
