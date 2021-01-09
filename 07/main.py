@@ -5,12 +5,14 @@ def is_below(program, programs):
 
     return True
 
+
 def find_program(name, programs):
     for i, p in enumerate(programs):
         if p["name"] == name:
             return p, i
-    
+
     return None
+
 
 def balance(name, programs):
     program, i = find_program(name, programs)
@@ -21,6 +23,7 @@ def balance(name, programs):
     if len(program["above"]) == 0:
         program["total"] = program["weight"]
         programs[i] = program
+
         return program["total"]
 
     total = program["weight"]
@@ -33,6 +36,7 @@ def balance(name, programs):
 
     return total
 
+
 def is_balanced(program, programs):
     weights = set()
 
@@ -42,8 +46,9 @@ def is_balanced(program, programs):
 
     return len(weights) < 2
 
+
 def fix_weight(program, programs):
-    weights = [ ]
+    weights = []
 
     for name in program["above"]:
         above, _ = find_program(name, programs)
@@ -63,25 +68,26 @@ def fix_weight(program, programs):
         if above["total"] == bad_weight:
             return above["weight"] - (bad_weight - good_weight)
 
+
 def main():
     f = open('./input.txt')
 
-    programs = [ ]
+    programs = []
 
     for line in f:
         name = line.strip().split(' (')[0]
         weight = int(line.strip().split(' (')[1].split(')')[0])
-        above = [ ]
+        above = []
 
         if '->' in line:
             above = line.strip().split('-> ')[1].split(', ')
-        
-        p = { "name": name, "weight": weight, "above": above, "total": 0 }
+
+        p = {"name": name, "weight": weight, "above": above, "total": 0}
         programs.append(p)
 
     f.close()
 
-    below_program = { }
+    below_program = {}
 
     for p in programs:
         if is_below(p, programs):
@@ -90,7 +96,7 @@ def main():
 
     print(f'Bottom program name (1): { below_program["name"] }')
 
-    bad_program = { "total": 2 ** 32 - 1 }
+    bad_program = {"total": 2 ** 32 - 1}
 
     for p in programs:
         balance(p["name"], programs)
@@ -102,6 +108,7 @@ def main():
     fixed_weight = fix_weight(bad_program, programs)
 
     print(f'Fixed weight (2): { fixed_weight }')
+
 
 if __name__ == '__main__':
     main()
