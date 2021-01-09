@@ -13,19 +13,21 @@ def escape_maze(maze, level):
 
     return steps
 
+
 def main():
     f = open('./input.txt')
 
-    maze = [ ]
+    maze = []
 
     for line in f:
         maze.append(int(line.strip()))
 
     f.close()
 
-    for level in [ 1, 2 ]:
+    for level in [1, 2]:
         steps = escape_maze(maze.copy(), level)
         print(f'Steps to escape the maze ({ level }): { steps }')
+
 
 if __name__ == '__main__':
     main()
