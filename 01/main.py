@@ -4,7 +4,7 @@ def solve(captcha, next):
 
 
 def main():
-    f = open('./input.txt')
+    f = open('input.txt')
     captcha = f.readline().strip()
     f.close()
 
