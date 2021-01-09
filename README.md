@@ -12,3 +12,4 @@ Resolution of the problems in Python language:
 | [Day 06](06) | Memory Reallocation                     | :star:                         |
 | [Day 07](07) | Recursive Circus                        | :star::star:                   |
 | [Day 08](08) | I Heard You Like Registers              | :star:                         |
+| [Day 09](09) | Stream Processing                       | :star::star:                   |
