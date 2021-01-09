@@ -70,7 +70,7 @@ def fix_weight(program, programs):
 
 
 def main():
-    f = open('./input.txt')
+    f = open('input.txt')
 
     programs = []
 
