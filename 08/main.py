@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    f = open('./input.txt')
+    f = open('input.txt')
 
     regs = {}
     max_value = 0
