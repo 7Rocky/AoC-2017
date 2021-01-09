@@ -1,14 +1,14 @@
 def main():
     f = open('./input.txt')
 
-    spreadsheet = [ ]
+    spreadsheet = []
 
     for line in f:
         spreadsheet.append(line.strip().split('\t'))
 
     f.close()
 
-    spreadsheet = [ [ int(cell) for cell in row ] for row in spreadsheet ]
+    spreadsheet = [[int(cell) for cell in row] for row in spreadsheet]
 
     checksum = 0
 
@@ -33,6 +33,7 @@ def main():
         checksum += row[right] // row[left]
 
     print(f'Spreadsheet checksum (2): { checksum }')
+
 
 if __name__ == '__main__':
     main()
