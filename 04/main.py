@@ -12,19 +12,20 @@ def isValid(passphrase, level):
 
     return True
 
+
 def main():
     f = open('./input.txt')
 
-    passphrases = [ ]
+    passphrases = []
 
     for line in f:
         passphrases.append(line.strip())
 
     f.close()
 
-    count = [ 0, 0 ]
+    count = [0, 0]
 
-    for level in [ 1, 2 ]:
+    for level in [1, 2]:
         for passphrase in passphrases:
             if isValid(passphrase, level):
                 count[level - 1] += 1
