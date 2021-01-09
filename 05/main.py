@@ -15,7 +15,7 @@ def escape_maze(maze, level):
 
 
 def main():
-    f = open('./input.txt')
+    f = open('input.txt')
 
     maze = []
 
