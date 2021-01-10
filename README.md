@@ -5,6 +5,7 @@ Resolution of the problems in Python language:
 ```
 git clone https://github.com/7Rocky/AoC-2017
 cd AoC-2017/day_<number>
+
 python main.py
 ```
 
