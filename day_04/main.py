@@ -1,4 +1,4 @@
-def isValid(passphrase, level):
+def is_valid(passphrase, level):
     words = passphrase.split(' ')
 
     for i in range(len(words)):
@@ -27,7 +27,7 @@ def main():
 
     for level in [1, 2]:
         for passphrase in passphrases:
-            if isValid(passphrase, level):
+            if is_valid(passphrase, level):
                 count[level - 1] += 1
 
         print(f'Number of valid pashphrases ({ level }): { count[level - 1] }')
