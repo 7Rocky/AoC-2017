@@ -53,7 +53,7 @@ def main():
     groups, count_garbage = remove_garbage(groups)
 
     print(f'Total score (1): { score(groups) }')
-    print(f'Max value held during the process (2): { count_garbage }')
+    print(f'Non-canceled characters within the garbage (2): { count_garbage }')
 
 
 if __name__ == '__main__':
