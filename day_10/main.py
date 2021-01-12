@@ -54,7 +54,7 @@ def main():
         numbers, start = knot_round(numbers, start, length, skip_size)
         skip_size += 1
 
-    print(f'Total score (1): { numbers[0] * numbers[1] }')
+    print(f'Result (1): { numbers[0] * numbers[1] }')
 
     numbers = [n for n in range(256)]
     rounds = 64
