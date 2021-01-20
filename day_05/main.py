@@ -1,7 +1,7 @@
 def escape_maze(maze, level):
     steps, i = 0, 0
 
-    while i >= 0 and i < len(maze):
+    while 0 <= i < len(maze):
         steps += 1
         offset = maze[i]
         maze[i] += 1
