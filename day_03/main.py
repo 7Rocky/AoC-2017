@@ -20,6 +20,7 @@ def main():
 
     recreate_ring = [i for i in range(
         8 * rings[ring-1] + 2, 8 * rings[ring] + 2)]
+
     despl = abs((recreate_ring.index(puzzle_input) + 1) %
                 (len(recreate_ring) // 4) - ring)
 
