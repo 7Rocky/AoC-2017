@@ -42,10 +42,8 @@ def score(groups):
 def main():
     f = open('input.txt')
 
-    groups = ''
-
     for line in f:
-        groups = line.strip()
+        groups = line
 
     f.close()
 
