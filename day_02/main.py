@@ -4,7 +4,7 @@ def main():
     spreadsheet = []
 
     for line in f:
-        spreadsheet.append(line.strip().split('\t'))
+        spreadsheet.append(line.split('\t'))
 
     f.close()
 
