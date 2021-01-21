@@ -10,6 +10,7 @@ def set_regs(regs, m):
 
     if regs.get(reg) == None:
         regs[reg] = 0
+
     if regs.get(reg_cond) == None:
         regs[reg_cond] = 0
 
