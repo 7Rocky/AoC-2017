@@ -25,7 +25,7 @@ def main():
 
     count = [0, 0]
 
-    for level in [1, 2]:
+    for level in (1, 2):
         for passphrase in passphrases:
             if is_valid(passphrase, level):
                 count[level - 1] += 1
