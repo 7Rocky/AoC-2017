@@ -15,9 +15,7 @@ def debug_banks(banks):
 
         debugged.append(banks.copy())
 
-    cycles = steps - (debugged.index(banks) + 1)
-
-    return steps, cycles
+    return steps, steps - (debugged.index(banks) + 1)
 
 
 def main():
