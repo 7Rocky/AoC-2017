@@ -35,6 +35,9 @@ def to_hex(numbers):
     return bytearray(numbers).hex()
 
 
+STANDARD_SUFFIX_VALUES = [17, 31, 73, 47, 23]
+
+
 def main():
     f = open('input.txt')
 
@@ -60,7 +63,7 @@ def main():
     rounds = 64
     start, skip_size = 0, 0
 
-    lengths = to_ascii(lengths_string) + [17, 31, 73, 47, 23]
+    lengths = to_ascii(lengths_string) + STANDARD_SUFFIX_VALUES
 
     for _ in range(rounds):
         for length in lengths:
