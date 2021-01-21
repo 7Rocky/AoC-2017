@@ -27,3 +27,4 @@ make test
 | [Day 08](day_08) | I Heard You Like Registers              | :star:                         |
 | [Day 09](day_09) | Stream Processing                       | :star::star:                   |
 | [Day 10](day_10) | Knot Hash                               | :star::star:                   |
+| [Day 11](day_11) | Hex Ed                                  | :star::star::star:             |
