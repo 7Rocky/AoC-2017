@@ -28,3 +28,5 @@ make test
 | [Day 09](day_09) | Stream Processing                       | :star::star:                   |
 | [Day 10](day_10) | Knot Hash                               | :star::star:                   |
 | [Day 11](day_11) | Hex Ed                                  | :star::star::star:             |
+| [Day 12](day_12) | Digital Plumber                         | :star::star::star:             |
+| [Day 13](day_13) | Packet Scanners                         | :star::star::star:             |
