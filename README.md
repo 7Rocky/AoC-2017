@@ -30,3 +30,5 @@ make test
 | [Day 11](day_11) | Hex Ed                                  | :star::star::star:             |
 | [Day 12](day_12) | Digital Plumber                         | :star::star::star:             |
 | [Day 13](day_13) | Packet Scanners                         | :star::star::star:             |
+| [Day 14](day_14) | Disk Defragmentation                    | :star::star::star::star:       |
+| [Day 15](day_15) | Dueling Generators                      | :star::star::star:             |
