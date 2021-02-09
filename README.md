@@ -32,3 +32,4 @@ make test
 | [Day 13](day_13) | Packet Scanners                         | :star::star::star:             |
 | [Day 14](day_14) | Disk Defragmentation                    | :star::star::star::star:       |
 | [Day 15](day_15) | Dueling Generators                      | :star::star::star:             |
+| [Day 16](day_16) | Permutation Promenade                   | :star::star::star:             |
