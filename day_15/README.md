@@ -1,4 +1,4 @@
-# Day 15: Dueling Generators 
+# Day 15: Dueling Generators
 
 ### --- Part One ---
 
