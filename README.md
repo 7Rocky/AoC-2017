@@ -34,3 +34,4 @@ make test
 | [Day 15](day_15) | Dueling Generators                      | :star::star::star:             |
 | [Day 16](day_16) | Permutation Promenade                   | :star::star::star:             |
 | [Day 17](day_17) | Spinlock                                | :star::star::star:             |
+| [Day 18](day_18) | Duet                                    | :star::star::star::star:       |
