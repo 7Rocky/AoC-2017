@@ -12,8 +12,8 @@ class TestMain(unittest.TestCase):
 
         main()
 
-        want = 'Programs order (1): fnloekigdmpajchb\n' + \
-               'Programs order (2): amkjepdhifolgncb\n'
+        want = 'First frequency received (1): 7071\n' + \
+               'Number of sent frequencies by Program 1 (2): 8001\n'
 
         sys.stdout = sys.__stdout__
         self.assertEqual(want, rescued_stdout.getvalue())
