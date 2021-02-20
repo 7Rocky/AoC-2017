@@ -1,11 +1,11 @@
 def move_programs(programs, move):
-    if 's' == move[0]:
+    if move[0] == 's':
         despl = int(move[1:])
         programs = programs[-despl:] + programs[:-despl]
-    elif 'x' == move[0]:
+    elif move[0] == 'x':
         a, b = map(int, move[1:].split('/'))
         programs[a], programs[b] = programs[b], programs[a]
-    elif 'p' == move[0]:
+    elif move[0] == 'p':
         a, b = map(programs.index, move[1:].split('/'))
         programs[a], programs[b] = programs[b], programs[a]
 
