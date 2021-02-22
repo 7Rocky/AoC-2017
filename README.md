@@ -37,3 +37,4 @@ make test
 | [Day 18](day_18) | Duet                                    | :star::star::star::star:       |
 | [Day 19](day_19) | A Series of Tubes                       | :star::star::star:             |
 | [Day 20](day_20) | Particle Swarm                          | :star::star::star:             |
+| [Day 21](day_21) | Fractal Art                             | :star::star::star::star::star: |
