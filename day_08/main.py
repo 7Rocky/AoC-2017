@@ -25,19 +25,19 @@ def set_regs(regs, m):
 
 
 def main():
-    f = open('input.txt')
-
     regs = {}
     max_value = 0
 
-    for line in f:
-        if m := re.match(r"(\w+) (inc|dec) (-?\d+) if (\w+) (==|!=|<=|>=|<|>) (-?\d+)", line):
-            set_regs(regs, m)
+    with open('input.txt') as f:
+        for line in f:
+            if m := re.match(
+                r"(\w+) (inc|dec) (-?\d+) if (\w+) (==|!=|<=|>=|<|>) (-?\d+)",
+                line
+            ):
+                set_regs(regs, m)
 
-        if max_value < max(regs.values()):
-            max_value = max(regs.values())
-
-    f.close()
+            if max_value < max(regs.values()):
+                max_value = max(regs.values())
 
     print(f'Max value after the process (1): { max(regs.values()) }')
     print(f'Max value held during the process (2): { max_value }')
