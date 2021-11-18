@@ -1,12 +1,9 @@
 def main():
-    f = open('input.txt')
-
     spreadsheet = []
 
-    for line in f:
-        spreadsheet.append(line.split('\t'))
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            spreadsheet.append(line.split('\t'))
 
     spreadsheet = [[int(cell) for cell in row] for row in spreadsheet]
 
