@@ -40,12 +40,9 @@ def score(groups):
 
 
 def main():
-    f = open('input.txt')
-
-    for line in f:
-        groups = line
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            groups = line
 
     groups = remove_ignored(groups)
     groups, count_garbage = remove_garbage(groups)
