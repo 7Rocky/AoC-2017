@@ -3,14 +3,11 @@ mod = 2147483647
 
 
 def main():
-    f = open('input.txt')
-
     starting_values = []
 
-    for line in f:
-        starting_values.append(int(line.split(' ').pop()))
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            starting_values.append(int(line.split(' ').pop()))
 
     next_a, next_b = starting_values
 
