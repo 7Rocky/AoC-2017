@@ -45,20 +45,19 @@ def remaining_particles(particles, positions_count):
 
 
 def main():
-    f = open('input.txt')
-
     particles, colliding_particles = [], []
 
-    for i, line in enumerate(f):
-        m = re.match(
-            r'p=<(-?\d+),(-?\d+),(-?\d+)>, v=<(-?\d+),(-?\d+),(-?\d+)>, a=<(-?\d+),(-?\d+),(-?\d+)>', line)
+    with open('input.txt') as f:
+        for i, line in enumerate(f):
+            m = re.match(
+                r'p=<(-?\d+),(-?\d+),(-?\d+)>, v=<(-?\d+),(-?\d+),(-?\d+)>, a=<(-?\d+),(-?\d+),(-?\d+)>',
+                line
+            )
 
-        particles.append(Particle(i, [int(m[1]), int(m[2]), int(m[3])], [int(
-            m[4]), int(m[5]), int(m[6])], [int(m[7]), int(m[8]), int(m[9])]))
-        colliding_particles.append(Particle(i, [int(m[1]), int(m[2]), int(m[3])], [int(
-            m[4]), int(m[5]), int(m[6])], [int(m[7]), int(m[8]), int(m[9])]))
-
-    f.close()
+            particles.append(Particle(i, [int(m[1]), int(m[2]), int(m[3])], [int(
+                m[4]), int(m[5]), int(m[6])], [int(m[7]), int(m[8]), int(m[9])]))
+            colliding_particles.append(Particle(i, [int(m[1]), int(m[2]), int(m[3])], [int(
+                m[4]), int(m[5]), int(m[6])], [int(m[7]), int(m[8]), int(m[9])]))
 
     finished = 1000
     min_distance = 2 ** 32 - 1
