@@ -14,14 +14,11 @@ def is_valid(passphrase, level):
 
 
 def main():
-    f = open('input.txt')
-
     passphrases = []
 
-    for line in f:
-        passphrases.append(line.strip())
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            passphrases.append(line.strip())
 
     count = [0, 0]
 
