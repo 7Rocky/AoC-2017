@@ -13,15 +13,12 @@ def move_programs(programs, move):
 
 
 def main():
-    f = open('input.txt')
-
     programs = [bytes([i + 97]).decode() for i in range(16)]
     initial_programs = programs.copy()
 
-    for line in f:
-        moves = line.strip().split(',')
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            moves = line.strip().split(',')
 
     i = 0
 
