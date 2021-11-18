@@ -30,11 +30,8 @@ def travel_tubes(tubes, position, direction):
 
 
 def main():
-    f = open('input.txt')
-
-    tubes = [line for line in f]
-
-    f.close()
+    with open('input.txt') as f:
+        tubes = [line for line in f]
 
     chars, steps = travel_tubes(tubes, tubes[0].index('|'), 1j)
 
