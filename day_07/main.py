@@ -70,22 +70,19 @@ def fix_weight(program, programs):
 
 
 def main():
-    f = open('input.txt')
-
     programs = []
 
-    for line in f:
-        name = line.strip().split(' (')[0]
-        weight = int(line.strip().split(' (')[1].split(')')[0])
-        above = []
+    with open('input.txt') as f:
+        for line in f:
+            name = line.strip().split(' (')[0]
+            weight = int(line.strip().split(' (')[1].split(')')[0])
+            above = []
 
-        if '->' in line:
-            above = line.strip().split('-> ')[1].split(', ')
+            if '->' in line:
+                above = line.strip().split('-> ')[1].split(', ')
 
-        p = {'name': name, 'weight': weight, 'above': above, 'total': 0}
-        programs.append(p)
-
-    f.close()
+            p = {'name': name, 'weight': weight, 'above': above, 'total': 0}
+            programs.append(p)
 
     below_program = {}
 
