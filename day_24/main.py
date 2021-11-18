@@ -50,12 +50,10 @@ def get_strength(bridge):
 
 
 def main():
-    f = open('input.txt')
-
     global pins
-    pins = [{'ports': line.strip()} for line in f]
 
-    f.close()
+    with open('input.txt') as f:
+        pins = [{'ports': line.strip()} for line in f]
 
     depth_first_search({'ports': '0/0'}, '0')
 
