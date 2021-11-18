@@ -18,12 +18,9 @@ def get_steps(pos):
 
 
 def main():
-    f = open('input.txt')
-
-    for line in f:
-        moves = [m for m in line.strip().split(',')]
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            moves = [m for m in line.strip().split(',')]
 
     max_num_steps, pos = 0, 0
 
