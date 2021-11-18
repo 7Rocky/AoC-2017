@@ -23,15 +23,12 @@ def get_severity(scanners):
 
 
 def main():
-    f = open('input.txt')
-
     scanners = []
 
-    for line in f:
-        depth, rank = line.strip().split(': ')
-        scanners.append(Scanner(int(depth), int(rank)))
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            depth, rank = line.strip().split(': ')
+            scanners.append(Scanner(int(depth), int(rank)))
 
     print(f'Severity of the trip (1): { get_severity(scanners) }')
 
