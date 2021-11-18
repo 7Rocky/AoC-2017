@@ -4,11 +4,8 @@ def solve(captcha, next):
 
 
 def main():
-    f = open('input.txt')
-
-    captcha = f.readline().strip()
-
-    f.close()
+    with open('input.txt') as f:
+        captcha = f.readline().strip()
 
     print(f'Solution to captcha (1): { solve(captcha, 1) }')
     print(f'Solution to captcha (2): { solve(captcha, len(captcha) // 2) }')
