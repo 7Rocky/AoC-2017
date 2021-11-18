@@ -80,11 +80,8 @@ class Program:
 
 
 def main():
-    f = open('input.txt')
-
-    instructions = [line.strip() for line in f]
-
-    f.close()
+    with open('input.txt') as f:
+        instructions = [line.strip() for line in f]
 
     sound = Program(0).process(instructions)
 
