@@ -78,15 +78,12 @@ def get_infected_nodes(grid, bursts, level):
 
 
 def main():
-    f = open('input.txt')
-
     grid_1, grid_2 = [], []
 
-    for line in f:
-        grid_1.append([c for c in line.strip()])
-        grid_2.append([c for c in line.strip()])
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            grid_1.append([c for c in line.strip()])
+            grid_2.append([c for c in line.strip()])
 
     infected_nodes = get_infected_nodes(grid_1, 10000, 1)
 
