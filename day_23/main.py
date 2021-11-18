@@ -54,11 +54,8 @@ def is_prime(number):
 
 
 def main():
-    f = open('input.txt')
-
-    instructions = [line.strip() for line in f]
-
-    f.close()
+    with open('input.txt') as f:
+        instructions = [line.strip() for line in f]
 
     program = Program()
     program.process(instructions)
