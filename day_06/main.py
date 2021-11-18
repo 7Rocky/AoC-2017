@@ -19,16 +19,13 @@ def debug_banks(banks):
 
 
 def main():
-    f = open('input.txt')
-
     banks = []
 
-    for line in f:
-        banks = line.strip().split('\t')
+    with open('input.txt') as f:
+        for line in f:
+            banks = line.strip().split('\t')
 
     banks = [int(b) for b in banks]
-
-    f.close()
 
     count, cycles = debug_banks(banks.copy())
 
