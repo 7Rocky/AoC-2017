@@ -23,11 +23,8 @@ states = {}
 
 
 def main():
-    f = open('input.txt')
-
-    lines = [line.strip() for line in f if line != '\n']
-
-    f.close()
+    with open('input.txt') as f:
+        lines = [line.strip() for line in f if line != '\n']
 
     state = re.match(r'Begin in state (\w)\.', lines.pop(0))[1]
     steps = int(re.match(
