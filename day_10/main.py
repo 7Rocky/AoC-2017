@@ -62,16 +62,13 @@ STANDARD_SUFFIX_VALUES = [17, 31, 73, 47, 23]
 
 
 def main():
-    f = open('input.txt')
-
     numbers = [n for n in range(256)]
     lengths = []
 
-    for line in f:
-        lengths_string = line.strip()
-        lengths = [int(n) for n in line.split(',')]
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            lengths_string = line.strip()
+            lengths = [int(n) for n in line.split(',')]
 
     round(lengths, numbers, 0, 0)
 
