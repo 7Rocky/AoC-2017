@@ -1,14 +1,11 @@
 def main():
     program_connections = {}
 
-    f = open('input.txt')
-
-    for line in f:
-        program, connections = line.strip().split(' <-> ')
-        program_connections[int(program)] = set(
-            [int(p) for p in connections.split(', ')])
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            program, connections = line.strip().split(' <-> ')
+            program_connections[int(program)] = set(
+                [int(p) for p in connections.split(', ')])
 
     groups = []
 
