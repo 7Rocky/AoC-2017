@@ -110,15 +110,12 @@ def enhance(image, rules):
 
 
 def main():
-    f = open('input.txt')
-
     rules = {}
 
-    for line in f:
-        split = line.strip().split(' => ')
-        rules[split[0]] = split[1]
-
-    f.close()
+    with open('input.txt') as f:
+        for line in f:
+            split = line.strip().split(' => ')
+            rules[split[0]] = split[1]
 
     image = ['.#.', '..#', '###']
 
